@@ -36,3 +36,28 @@ GROUP BY p.nazwa
 ORDER BY liczba_ocen DESC;
 
 ```
+
+### 4. Którzy uczniowie otrzymywali oceny wyższe niż średnia w poprzednim roku kalendarzowym?
+
+```sql
+SELECT DISTINCT u.id, u.imie, u.nazwisko
+FROM uczniowie u
+JOIN oceny o ON u.id = o.id_uczen
+WHERE o.wartosc > (
+    SELECT AVG(wartosc)
+    FROM oceny
+    WHERE YEAR(data_utworzenia) = YEAR(CURDATE()) - 1
+)
+AND YEAR(o.data_utworzenia) = YEAR(CURDATE()) - 1;
+```
+
+### 5. Podaj klasy w których uczy nauczyciel XXX (Grzegorz Brzęczyszczykiewicz).
+
+```sql
+SELECT DISTINCT k.id, k.nazwa
+FROM klasy k
+JOIN klasy_przedmioty kp ON k.id = kp.id_klasa
+JOIN nauczyciele_przedmioty np ON kp.id_nauczyciel_przedmiot = np.id
+JOIN nauczyciele n ON np.id_nauczyciel = n.id
+WHERE n.imie = 'Grzegorz' AND n.nazwisko = 'Brzęczyszczykiewicz';
+```
