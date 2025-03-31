@@ -61,3 +61,19 @@ JOIN nauczyciele_przedmioty np ON kp.id_nauczyciel_przedmiot = np.id
 JOIN nauczyciele n ON np.id_nauczyciel = n.id
 WHERE n.imie = 'Grzegorz' AND n.nazwisko = 'Brzęczyszczykiewicz';
 ```
+
+### 6. Podaj nauczycieli i uczniów którzy mieszkają w tej samej miejscowości i na tej samej ulicy.
+
+```sql
+SELECT
+    n.id AS id_nauczyciel,
+    n.imie AS imie_nauczyciela,
+    n.nazwisko AS nazwisko_nauczyciela,
+    u.id AS id_uczen,
+    u.imie AS imie_ucznia,
+    u.nazwisko AS nazwisko_ucznia,
+    n.miejscowosc,
+    n.ulica
+FROM nauczyciele n
+JOIN uczniowie u ON n.miejscowosc = u.miejscowosc AND n.ulica = u.ulica;
+```
