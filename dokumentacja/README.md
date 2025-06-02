@@ -42,3 +42,31 @@ Baza nie należy do najmniejszych, posiada 16 tabel, które dobrze pokazane są 
 !Diagram.
 
 Informacje z wszelkimi szczegółami można znaleźć w pliku struktury bazy: !Link do pliku
+
+## Użytkownicy
+
+Użytkownikami bazy będą zarówno pracownicy szkoły (dyrektor, nauczyciele, wychowawcy itp.) jak i uczniowie i ich rodzice.
+
+W celu uniknięcia nieautoryzowanego dostępu do określonych danych, stworzono podział na rolę:
+
+-   dyrektor - posiada możliwość odczytu, wprowadzania, modyfikacji i usuwania danych związanych z uczniami, lekcjami itp.
+
+-   wicedyrektor - posiada zasób permisji podobny do dyrektora
+
+-   nauczyciel - ma możliwość edytowania tematów lekcji, wpisywania ocen z przedmiotów, których uczy w danych klasach itp.
+
+-   wychowawca - ma wgląd do np. ocen swojej klasy itp.
+
+-   uczeń i rodzic - widzą swoich dzieci/swoje oceny itp.
+
+## Przykładowe polecenia
+
+Przykładowe polecenia można znaleźć w pliku: !Kwerendy
+
+## Procedury i funkcje
+
+Przykładowe procedury i funkcje można znaleźć w pliku: !Procedury i funkcje
+
+## Wyzwalacze
+
+Przykładowe wyzwalacze można znaleźć w pliku: !wyzwalacze
