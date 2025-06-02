@@ -10,7 +10,7 @@ Projekt miał polegać na utworzeniu przykładowej bazy danych szkoły (dziennik
 
 Zalążkiem projektu były rozmowy z dużą ilością pracowników szkoły (dyrektorem, nauczycielami). W ich trakcie przeprowadzono ankietę, której wynikiem są przedstawione poniżej dane:
 
-!Link do danych
+[Link do danych](https://github.com/Szkolne-projekty/BazySzkolaSQL2025/blob/main/assets/Dane%20z%20ankiet.pdf)
 
 ## Faktyczny projekt
 
@@ -39,9 +39,9 @@ Jest to dosyć ważny aspekt w tym wypadku, ponieważ szkoły są instytucjami p
 
 Baza nie należy do najmniejszych, posiada 16 tabel, które dobrze pokazane są na poniższym diagramie
 
-!Diagram.
+![Diagram](https://github.com/Szkolne-projekty/BazySzkolaSQL2025/blob/main/assets/Diagram%20bazy.png?raw=true)
 
-Informacje z wszelkimi szczegółami można znaleźć w pliku struktury bazy: !Link do pliku
+Informacje z wszelkimi szczegółami można znaleźć w pliku struktury bazy: [Link do pliku](https://github.com/Szkolne-projekty/BazySzkolaSQL2025/blob/main/sql/empty_structure.sql)
 
 ## Użytkownicy
 
@@ -61,12 +61,12 @@ W celu uniknięcia nieautoryzowanego dostępu do określonych danych, stworzono 
 
 ## Przykładowe polecenia
 
-Przykładowe polecenia można znaleźć w pliku: !Kwerendy
+Przykładowe polecenia można znaleźć w pliku: [Kwerendy](https://github.com/Szkolne-projekty/BazySzkolaSQL2025/blob/main/zadania/kwerendy.md)
 
 ## Procedury i funkcje
 
-Przykładowe procedury i funkcje można znaleźć w pliku: !Procedury i funkcje
+Przykładowe procedury i funkcje można znaleźć w pliku: [Procedury i funkcje](https://github.com/Szkolne-projekty/BazySzkolaSQL2025/blob/main/zadania/procedury_funkcje.md)
 
 ## Wyzwalacze
 
-Przykładowe wyzwalacze można znaleźć w pliku: !wyzwalacze
+Przykładowe wyzwalacze można znaleźć w pliku: [Wyzwalacze](https://github.com/Szkolne-projekty/BazySzkolaSQL2025/blob/main/zadania/wyzwalacze.md)
